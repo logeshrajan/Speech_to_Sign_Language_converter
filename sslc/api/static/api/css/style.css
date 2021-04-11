@@ -1,0 +1,38 @@
+* {
+  box-sizing: border-box;
+}
+
+.column{
+  float: left;
+  width: 50%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.columns{
+  float: left;
+  width: 50%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.rows::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+h2,h3,p{
+ color: white;
+}
+
+body{
+ background-color: black;
+}

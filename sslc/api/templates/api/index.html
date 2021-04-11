@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" >
+    <head>
+        <meta charset="UTF-8">
+        {% load static %}
+        <title>Sign Language</title>
+        <!--    <add icon link-->
+        <link rel="shortcut icon" type="image/png" href="{%  static '\api\images\sign.ico' %}"/>
+        <link rel="stylesheet" href="{%  static '\api\css\style.css' %}">
+        <link rel="script" href="{%  static '\api\js\main.js' %}">
+    </head>
+    <body>
+        <center >
+            <div class="heading">
+                <h2> SIGN LANGUAGE</h2>
+            </div>
+            <div >
+                <button type="button" class="btn" onclick="myFunction()">Click me to know the Sign Language</button><br>
+                <button type="button" class="btn1" style="display:none" onclick="myFunction1()">Try New word</button><br>
+            </div>
+
+            <div class="row">
+
+                <div class="column" id="home" style="width:40%;" >
+                    <img src="{%  static '\api\images\home.png' %}">
+                </div>
+
+                <div class="column" id="img_id1" style="width:40%;display:none;" >
+                    <img  src="{%  static '\api\images\mic.gif' %}"  >
+                </div>
+
+            </div>
+        </center>
+        <center>
+            <div class="columns" style="display:none">
+                <img id="gif_url" src=""> <br><br>
+                <h2 id="text_msg"></h2>
+            </div>
+        </center>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+            <script src="{%  static '\api\js\main.js' %}"></script>
+            <script>
+                function myFunction() {
+                   document.getElementById('img_id1').style.display='block';
+                }
+                function myFunction1() {
+                   document.getElementById('home').style.display='block';
+                   document.getElementById('img_id1').style.display='block';
+                }
+            </script>
+
+    </body>
+</html>
+
+<!--onclick="myFunction('img_id1')"-->
+<!--document.getElementById('btn2').style.display='block';-->
+
+
+
+
+
+
+
+
+<!--latest one -->
+<!--<div class="home_img" >-->
+<!--            <img src="{%  static '\api\images\home.png' %}">-->
+<!--            <button id="get_gif">Hello there! Click me and know the phrases in Sign Language!...</button>-->
+<!--        </div>-->
+
+<!--        <div class="loader" >-->
+<!--            <img src="{%  static '\api\images\mic.gif' %}">-->
+<!--        </div>-->
+
+<!--        &lt;!&ndash; resultent div &ndash;&gt;-->
+<!--        <div id="result">-->
+<!--            <img style="-webkit-user-select: none;margin: auto;background-color: hsl(0, 0%, 90%);transition: background-color 300ms;" id="img_id" src="">-->
+<!--        </div>-->
